@@ -1,6 +1,6 @@
 import { sceneState, markAsDirty } from './state.js';
 import { clearAssetImages, redrawCanvas } from './editor.js';
-import { updatePropertiesPanel } from './ui.js';
+import { updatePropertiesPanel } from './panels.js';
 
 export function handleImportJson() {
     const input = document.createElement('input');

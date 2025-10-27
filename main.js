@@ -2,8 +2,8 @@ import { sceneState, addAssetToScene, markAsDirty, isStateDirty } from './state.
 import { initializeCanvas, redrawCanvas, clearAssetImages, setTool } from './editor.js';
 import { generateImage } from './api.js';
 import { 
-    showLoader, hideLoader, selectLibraryAsset, updatePropertiesPanel, 
-    setupPanelToggles, addAssetToLibrary, 
+    showLoader, hideLoader, selectLibraryAsset,
+    initializeUi, addAssetToLibrary, 
     updateSaveButtonState, updateLastGeneratedAsset 
 } from './ui.js';
 import { handleImportJson, handleExportJson } from './fileHandlers.js';
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Initialize modules
     initializeCanvas(document.getElementById('editor-canvas'));
     initializeDragDrop();
-    setupPanelToggles();
+    initializeUi();
 
     // 3. Initial draw and UI setup
     redrawCanvas();
