@@ -1,0 +1,10 @@
+// Handle asset placeholder animation on mobile
+if ('ontouchstart' in window) {
+    if (leftPanel.classList.contains('visible')) {
+        // startAssetPlaceholderAnimation(); // This is now handled in placeholderAnimations.js
+    } else {
+        // stopAssetPlaceholderAnimation(); // This is now handled in placeholderAnimations.js
+    }
+};
+
+mobileToggleLeft.addEventListener('click', () => togglePanel(leftPanel));

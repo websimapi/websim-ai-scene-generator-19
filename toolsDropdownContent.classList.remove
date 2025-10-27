@@ -1,0 +1,3 @@
+// Handle asset placeholder animation on desktop
+// removed desktop mouseenter/mouseleave listeners for assetPrompt
+
